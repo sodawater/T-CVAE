@@ -318,7 +318,7 @@ def init_embedding(hparams):
         vocab.append(line.rstrip("\n"))
     # word_vectors = KeyedVectors.load_word2vec_format("GoogleNews-vectors-negative300.bin", binary=True)
 
-    word_vectors = KeyedVectors.load_word2vec_format("roc_vector.txt")
+    word_vectors = KeyedVectors.load_word2vec_format("data/roc_vector.txt")
     # word_vectors = KeyedVectors.load_word2vec_format("glove.840B.300d.txt", binary=False)
     # model = Word2Vec(sentences=sent, sg=1, size=256, window=5, min_count=3, hs=1)
     # model.save("word2vec")
