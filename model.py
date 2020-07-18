@@ -116,7 +116,7 @@ class TCVAE():
 
                     post_outputs = feedforward(post_inputs, [self.num_units * 2, self.num_units], is_training=self.is_training,
                                           dropout_rate=self.dropout_rate, scope="f1",reuse=tf.AUTO_REUSE)
-                    post_outputs = post_outputs + inputs
+                    post_outputs = post_outputs + post_inputs
                     post_inputs = normalize(post_outputs)
 
             big_window = windows[0] + windows[1] + windows[2] + windows[3]
